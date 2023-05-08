@@ -2,9 +2,20 @@ generator client {
   provider = "prisma-client-js"
 }
 
+// datasource db {
+//   provider = "sqlite"
+//   url      = "file:./dev.db"
+// }
+
+
+// example postgres
+// datasource db {
+//   provider = "postgresql"
+//   url      = "postgresql://janedoe:mypassword@localhost:5432/notesapi?schema=public"
+// }
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "postgresql"
+  url      = "postgresql://clinica:clinica123@localhost:5401/clinica?schema=public"
 }
 
 model Post {
